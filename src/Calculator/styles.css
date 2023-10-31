@@ -36,7 +36,10 @@
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: wheat;
+  color: var(--White);
+}
+.headerTitle {
+  align-self: center;
 }
 .themeContainer {
   display: flex;
@@ -44,13 +47,13 @@
 }
 .themeTitle {
   align-self: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 .themeContainerNumbers {
   display: flex;
-  font-size: 18px;
+  font-size: 14px;
   gap: 8px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .themeContainerChecks {
   justify-content: space-between;
@@ -58,16 +61,16 @@
   gap: 8px;
   background-color: var(--toggle-background-keypad-background);
   padding: 4px;
-  border-radius: 25%;
+  border-radius: 14px;
+  margin-top: 6px;
 }
 .themeContainerChecks > * {
   appearance: none;
   height: 14px;
   width: 14px;
   border-radius: 50%;
-  
 }
-.themeContainerChecks > *:checked{
+.themeContainerChecks > *:checked {
   background-color: var(--key-background-toggle);
 }
 

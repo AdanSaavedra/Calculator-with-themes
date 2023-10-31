@@ -5,7 +5,7 @@ const Calculator = () => {
     <>
       <div className="calculator">
         <div className="header">
-          <p>calc</p>
+          <p className="headerTitle">calc</p>
           <div className="themeContainer">
             <p className="themeTitle">THEME</p>
             <div className="themeContainerSelector">
