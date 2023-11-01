@@ -12,18 +12,15 @@ const Calculator = () => {
     setValue(value + e);
     if (e == "=") {
       if (math.evaluate(value) - Math.floor(math.evaluate(value)) !== 0) {
-        setValue(math.evaluate(value).toFixed(2));
+        setValue(math.evaluate(value).toFixed(2).toString());
       } else {
-        setValue(math.evaluate(value));
+        setValue(math.evaluate(value).toString());
       }
     } else if (e == "DEL") {
       setValue(value.slice(0, -1));
     } else if (e == "RESET") {
       setValue("");
     }
-    // else if (value.includes("DEL")) {
-    //   setValue(value.slice(0, -1));
-    // }
   };
 
   return (
@@ -47,9 +44,7 @@ const Calculator = () => {
             </div>
           </div>
         </div>
-        <div className="result">
-          <p>{value}</p>
-        </div>
+        <div className="result">{value}</div>
         <div className="container">
           <div
             onClick={(e) => readValue(e.target.outerText)}
