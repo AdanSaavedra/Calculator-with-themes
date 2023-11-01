@@ -77,6 +77,12 @@
 /* result */
 .result {
   background-color: var(--screen-background);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: var(--White);
+  padding: 30px;
 }
 
 /* Container */

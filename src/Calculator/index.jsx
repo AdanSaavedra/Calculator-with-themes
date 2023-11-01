@@ -23,7 +23,7 @@ const Calculator = () => {
           </div>
         </div>
         <div className="result">
-          <p>399.981</p>
+          <p>399,981</p>
         </div>
         <div className="container">
           <div className="item item-1">7</div>
