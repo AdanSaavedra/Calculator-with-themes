@@ -140,3 +140,25 @@
 .item-equal:hover {
   background-color: var(--key-background-result-hover);
 }
+
+@media (max-width: 600px) {
+  .calculator {
+    grid-template-columns: 330px;
+    grid-template-rows: 60px 90px 400px;
+  }
+  .item {
+    border-radius: 4px;
+  }
+  .container {
+    gap: 16px 12px;
+  }
+  .result {
+    font-size: 40px;
+    padding: 20px;
+  }
+  .item-del,
+  .item-reset,
+  .item-equal {
+    font-size: 20px;
+  }
+}
