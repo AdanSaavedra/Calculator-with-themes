@@ -1,0 +1,127 @@
+:root {
+  /* Backgrounds */
+  --main-background-default: hsl(222, 26%, 31%);
+  --toggle-background-keypad-background-default: hsl(223, 31%, 20%);
+  --screen-background-default: hsl(224, 36%, 15%);
+
+  /* Keys */
+  --key-background-reset-del-default: hsl(225, 21%, 49%);
+  --key-background-reset-del-hover-default: hsl(223.81, 51.22%, 75.88%);
+  --key-shadow-reset-del-default: hsl(224, 28%, 35%);
+  --key-background-result-default: hsl(6, 63%, 50%);
+  --key-background-result-hover-default: hsl(6.46, 92.94%, 66.67%);
+  --key-shadow-result-default: hsl(6, 70%, 34%);
+  --key-background-default: hsl(30, 25%, 89%);
+  --key-shadow-default: hsl(28, 16%, 65%);
+
+  /* Text */
+  --Very-dark-grayish-blue-default: hsl(221, 14%, 31%);
+  --White-default: hsl(0, 0%, 100%);
+
+  /* Second */
+  /* Background */
+  --main-background-second: hsl(0, 0%, 90%);
+  --toggle-background-keypad-background-second: hsl(0, 5%, 81%);
+  --screen-background-second: hsl(0, 0%, 93%);
+
+  /* Keys */
+  --key-background-reset-del-second: hsl(185, 42%, 37%);
+  --key-background-reset-del-hover-second: hsl(223.81, 51.22%, 75.88%);
+  --key-shadow-reset-del-second: hsl(185, 58%, 25%);
+  --key-background-result-second: hsl(25, 98%, 40%);
+  --key-background-result-hover-second: hsl(6.46, 92.94%, 66.67%);
+  --key-shadow-result-second: hsl(25, 99%, 27%);
+  --key-background-second: hsl(45, 7%, 89%);
+  --key-shadow-second: hsl(35, 11%, 61%);
+
+  /* Text */
+  --Very-dark-grayish-blue-second: hsl(60, 10%, 19%);
+  --White-second: hsl(0, 0%, 100%);
+
+  /* Third */
+  --main-background-third: hsl(268, 75%, 9%);
+  --toggle-background-keypad-background-third: hsl(268, 71%, 12%);
+  --screen-background-third: hsl(268, 71%, 12%);
+  --key-background-reset-del-third: hsl(281, 89%, 26%);
+  --key-background-reset-del-hover-third: white;
+  --key-shadow-reset-del-third: hsl(285, 91%, 52%);
+  --key-background-result-third: hsl(176, 100%, 44%);
+  --key-background-result-hover-third: white;
+  --key-shadow-result-third: hsl(177, 92%, 70%);
+  --key-background-third: hsl(268, 47%, 21%);
+  --key-shadow-third: hsl(290, 70%, 36%);
+  --Very-dark-grayish-blue-third: hsl(52, 100%, 62%);
+  --White-third: hsl(267.5, 53.57%, 43.92%);
+}
+.App {
+  height: 100vh;
+}
+.default {
+  --main-background: var(--main-background-default);
+  --toggle-background-keypad-background: var(
+    --toggle-background-keypad-background-default
+  );
+  --screen-background: var(--screen-background-default);
+
+  /* Keys */
+  --key-background-reset-del: var(--key-background-reset-del-default);
+  --key-background-reset-del-hover: var(
+    --key-background-reset-del-hover-default
+  );
+  --key-shadow-reset-del: var(--key-shadow-reset-del-default);
+  --key-background-result: var(--key-background-result-default);
+  --key-background-result-hover: var(--key-background-result-hover-default);
+  --key-shadow-result: var(--key-shadow-result-default);
+  --key-background: var(--key-background-default);
+  --key-shadow: var(--key-shadow-default);
+
+  /* Text */
+  --Very-dark-grayish-blue: var(--Very-dark-grayish-blue-default);
+  --White: var(--White-default);
+}
+
+.second {
+  --main-background: var(--main-background-second);
+  --toggle-background-keypad-background: var(
+    --toggle-background-keypad-background-second
+  );
+  --screen-background: var(--screen-background-second);
+
+  /* Keys */
+  --key-background-reset-del: var(--key-background-reset-del-second);
+  --key-background-reset-del-hover: var(
+    --key-background-reset-del-hover-second
+  );
+  --key-shadow-reset-del: var(--key-shadow-reset-del-second);
+  --key-background-result: var(--key-background-result-second);
+  --key-background-result-hover: var(--key-background-result-hover-second);
+  --key-shadow-result: var(--key-shadow-result-second);
+  --key-background: var(--key-background-second);
+  --key-shadow: var(--key-shadow-second);
+
+  /* Text */
+  --Very-dark-grayish-blue: var(--Very-dark-grayish-blue-second);
+  --White: var(--White-second);
+}
+
+.third {
+  --main-background: var(--main-background-third);
+  --toggle-background-keypad-background: var(
+    --toggle-background-keypad-background-third
+  );
+  --screen-background: var(--screen-background-third);
+
+  /* Keys */
+  --key-background-reset-del: var(--key-background-reset-del-third);
+  --key-background-reset-del-hover: var(--key-background-reset-del-hover-third);
+  --key-shadow-reset-del: var(--key-shadow-reset-del-third);
+  --key-background-result: var(--key-background-result-third);
+  --key-background-result-hover: var(--key-background-result-hover-third);
+  --key-shadow-result: var(--key-shadow-result-third);
+  --key-background: var(--key-background-third);
+  --key-shadow: var(--key-shadow-third);
+
+  /* Text */
+  --Very-dark-grayish-blue: var(--Very-dark-grayish-blue-third);
+  --White: var(--White-third);
+}
