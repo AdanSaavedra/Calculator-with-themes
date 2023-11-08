@@ -26,10 +26,10 @@
 
   /* Keys */
   --key-background-reset-del-second: hsl(185, 42%, 37%);
-  --key-background-reset-del-hover-second: hsl(223.81, 51.22%, 75.88%);
+  --key-background-reset-del-hover-second: hsl(185.27, 40.81%, 56.27%);
   --key-shadow-reset-del-second: hsl(185, 58%, 25%);
   --key-background-result-second: hsl(25, 98%, 40%);
-  --key-background-result-hover-second: hsl(6.46, 92.94%, 66.67%);
+  --key-background-result-hover-second: hsl(25.03, 100%, 60.98%);
   --key-shadow-result-second: hsl(25, 99%, 27%);
   --key-background-second: hsl(45, 7%, 89%);
   --key-shadow-second: hsl(35, 11%, 61%);
@@ -43,15 +43,16 @@
   --toggle-background-keypad-background-third: hsl(268, 71%, 12%);
   --screen-background-third: hsl(268, 71%, 12%);
   --key-background-reset-del-third: hsl(281, 89%, 26%);
-  --key-background-reset-del-hover-third: white;
+  --key-background-reset-del-hover-third: hsl(280.16, 56.44%, 44.12%);
   --key-shadow-reset-del-third: hsl(285, 91%, 52%);
   --key-background-result-third: hsl(176, 100%, 44%);
-  --key-background-result-hover-third: white;
+  --key-background-result-hover-third: hsl(176.64, 100%, 79.02%);
   --key-shadow-result-third: hsl(177, 92%, 70%);
   --key-background-third: hsl(268, 47%, 21%);
   --key-shadow-third: hsl(290, 70%, 36%);
   --Very-dark-grayish-blue-third: hsl(52, 100%, 62%);
-  --White-third: hsl(267.5, 53.57%, 43.92%);
+  --White-third: hsl(0, 0%, 100%);
+  --third-hover: hsl(267.5, 53.57%, 43.92%);
 }
 .App {
   height: 100vh;
@@ -78,6 +79,8 @@
   /* Text */
   --Very-dark-grayish-blue: var(--Very-dark-grayish-blue-default);
   --White: var(--White-default);
+  --del-reset: var(--White-default);
+  --keys-hover: var(--White-default);
 }
 
 .second {
@@ -102,6 +105,10 @@
   /* Text */
   --Very-dark-grayish-blue: var(--Very-dark-grayish-blue-second);
   --White: var(--White-second);
+  --header: var(--Very-dark-grayish-blue-second);
+  --result: var(--Very-dark-grayish-blue-second);
+  --del-reset: var(--White-second);
+  --keys-hover: var(--White-second);
 }
 
 .third {
@@ -124,4 +131,8 @@
   /* Text */
   --Very-dark-grayish-blue: var(--Very-dark-grayish-blue-third);
   --White: var(--White-third);
+  --header: var(--Very-dark-grayish-blue-third);
+  --result: var(--Very-dark-grayish-blue-third);
+  --del-reset: var(--White-third);
+  --keys-hover: var(--third-hover);
 }
