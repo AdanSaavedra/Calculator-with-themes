@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { create, all } from "mathjs";
 import "./styles.css";
+import { ThemeContext } from "../Theme";
 
 const config = {};
 const math = create(all, config);
 
 const Calculator = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const [value, setValue] = useState("");
 
   const readValue = (e) => {
@@ -37,9 +39,22 @@ const Calculator = () => {
                 <p>3</p>
               </div>
               <div className="themeContainerChecks">
-                <input type="radio" name="1" defaultChecked />
-                <input type="radio" name="1" />
-                <input type="radio" name="1" />
+                <input
+                  onClick={() => toggleTheme("default")}
+                  type="radio"
+                  name="1"
+                  defaultChecked
+                />
+                <input
+                  onClick={() => toggleTheme("second")}
+                  type="radio"
+                  name="1"
+                />
+                <input
+                  onClick={() => toggleTheme("third")}
+                  type="radio"
+                  name="1"
+                />
               </div>
             </div>
           </div>
